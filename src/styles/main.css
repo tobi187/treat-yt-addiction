@@ -1,0 +1,59 @@
+@import url('../../node_modules/@fortawesome/fontawesome-free/css/all.css');
+
+.headliner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+}
+
+.flex {
+    display: flex;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 50%;
+    height: 100%;
+    padding: 4px;
+    border: 2px;
+    border-radius: 10px;
+    border-color: black;
+}
+
+.center-h {
+    display: flex;
+    justify-content: center;
+}
+
+.t-input {
+    width: 100%;
+    padding: 2px;
+}
+
+.wt-el {
+    list-style: none;
+    border: 1px;
+    border-color: black;
+    padding: 1px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wt-container {
+    border: 1px;
+    border: black;
+}
+
+.wt-rm {
+    color: red;
+}

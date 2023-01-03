@@ -3,11 +3,11 @@ const ytBaseLink = "https://youtube"
 
 const whiteList = ["Let'sgameitout"];
 
-chrome.tabs.query({active: true, lastFocusedWindow: true}, (tabs) => {
-    const ytUrls = tabs.filter((el) => el.url?.startsWith("https://youtube"))
-    if (ytUrls.length < 1) return;
-
+chrome.tabs.query({ url: ["https://youtube.*", "https://www.youtube.*"] }, (tabs) => {
+    tabs.forEach(x => console.log(x.url))
 })
+
+chrome.webNavigation.onCompleted.addListener(function () {})
 
 type Video = {
     name: string,
